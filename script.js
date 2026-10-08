@@ -1614,14 +1614,7 @@ if __name__ == '__main__':
       shortcut: 'PROJ',
       action: () => scrollToSection('projects')
     },
-    {
-      id: 'cmd-course-code',
-      title: 'Student Course Management Source Code',
-      desc: 'Inspect Core Java Spring Boot controller, service & schema',
-      icon: '☕',
-      shortcut: 'JAVA',
-      action: () => openProjectCode('course-mgmt')
-    },
+
     {
       id: 'cmd-skills',
       title: 'Technical Competencies & Proficiency',
