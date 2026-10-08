@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Vedashri Prabhakar Gavali - Final-year Electronics Engineering student and Full Stack Developer.">
+  <meta name="keywords"
+    content="Vedashri Gavali, Portfolio, Full Stack Developer, Java, Spring Boot, React, Web Development, Electronics Engineer">
+  <meta name="author" content="Vedashri Prabhakar Gavali">
+  <title>Vedashri Prabhakar Gavali | Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="top">
+  <!-- Full-Page Interactive Particle Constellation & Dot Background Canvas -->
+  <canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas>
+
+  <!-- ==================== HEADER & NAVIGATION ==================== -->
+  <header class="site-header" id="header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <div class="nav-brand">
+        <a href="#/" class="brand-logo" aria-label="Home">
+          <span class="brand-initials">VG</span>
+          <span class="brand-name">Vedashri Gavali</span>
+        </a>
+      </div>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#/about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#/education" class="nav-link">Education</a></li>
+        <li class="nav-item"><a href="#/skills" class="nav-link">Skills</a></li>
+        <li class="nav-item"><a href="#/projects" class="nav-link">Projects</a></li>
+        <li class="nav-item"><a href="#/experience" class="nav-link">Experience</a></li>
+        <li class="nav-item"><a href="#/certifications" class="nav-link">Certifications</a></li>
+        <li class="nav-item mobile-menu-only"><a href="resume.html" target="_blank" class="nav-link">📄 Resume CV</a></li>
+        <li class="nav-item"><a href="#/contact" class="nav-link">Contact</a></li>
+        <li class="nav-item mobile-menu-only"><a href="mailto:vedashrigavali500@gmail.com" class="nav-link">💼 Hire Me</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="btn-cmd-palette" id="btn-cmd-palette" aria-label="Open Command Palette" title="Command Palette (Ctrl + K / Cmd + K)">
+          <span class="cmd-icon">⚡</span>
+          <span class="cmd-key-badge">Ctrl+K</span>
+        </button>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <span class="theme-icon">☀️</span>
+        </button>
+        <a href="resume.html" target="_blank" class="btn btn-outline nav-resume-btn" title="View &amp; Download Resume CV">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+          Resume
+        </a>
+        <button type="button" class="btn btn-outline nav-cheat-btn" id="nav-cheat-btn" title="Quick 30-Sec Recruiter Cheat Sheet">⚡ Cheat Sheet</button>
+        <a href="mailto:vedashrigavali500@gmail.com" class="btn btn-outline nav-hire-btn">Hire Me</a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== CLIENT-SIDE SPA ROUTER BAR (Context API & Hash Router) ==================== -->
+    <nav class="spa-router-bar" id="spa-router-bar" aria-label="SPA Client-Side Navigation"></nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="hero" aria-labelledby="hero-title">
+      <div class="hero-container">
+        <div class="hero-content">
+          <p class="hero-tagline">
+            <span class="pulse-indicator"></span> Available for IT &amp; Software Opportunities
+          </p>
+
+          <h1 id="hero-title" class="hero-title">
+            Hi, I'm <span class="highlight-text">Vedashri Prabhakar Gavali</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="typewriter-prefix">Aspiring </span><span class="typewriter-text" id="typewriter-text">Full-Stack Software Engineer</span><span class="typewriter-cursor">|</span>
+          </p>
+          <p class="hero-description">
+            Passionate about building scalable web applications, robust backend systems in Java &amp; Spring Boot, and
+            modern responsive user interfaces. Blending hardware acumen (VLSI &amp; IoT) with modern full-stack software
+            development.
+          </p>
+
+          <div class="hero-meta">
+            <span class="meta-item">
+              📍 Chhatrapati Sambhajinagar, Maharashtra, India
+            </span>
+            <span class="meta-item">
+              🎓 B.Tech (2024–2027) &bull; CGPA: 8.35/10
+            </span>
+            <span class="meta-item">
+              💼 Open for IT &amp; Software Opportunities
+            </span>
+          </div>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="resume.html" target="_blank" class="btn btn-secondary resume-btn" id="hero-resume-btn" title="View &amp; Download Resume CV">
+              <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg>
+              Resume CV
+            </a>
+            <button type="button" class="btn btn-secondary btn-cheat-sheet" id="hero-cheat-sheet-btn" title="Quick 30-Second Recruiter Cheat Sheet">
+              ⚡ Recruiter Cheat Sheet
+            </button>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <a href="https://linkedin.com/in/vedashri-gavali" target="_blank" rel="noopener noreferrer"
+              class="btn btn-linkedin">
+              LinkedIn &rarr;
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-card tilt-card" aria-label="Profile Card">
+          <figure class="profile-figure">
+            <div class="avatar-frame">
+              <div class="avatar-glow"></div>
+              <img src="profile.jpg" alt="Vedashri Prabhakar Gavali - Full Stack Developer" class="profile-img" width="136" height="136" loading="eager" />
+              <div class="avatar-status" title="Active &amp; Available for Software Engineering Opportunities" aria-label="Available for hire">
+                <span class="status-pulse"></span>
+              </div>
+            </div>
+            <figcaption>
+              <h3>Vedashri Prabhakar Gavali</h3>
+              <p>Full Stack Developer</p>
+            </figcaption>
+          </figure>
+
+          <div class="quick-stats">
+            <div class="stat-box" data-count="8.35" data-decimal="2">
+              <span class="stat-number">0.00</span>
+              <span class="stat-label">B.Tech CGPA</span>
+            </div>
+            <div class="stat-box" data-count="3" data-suffix="+">
+              <span class="stat-number">0+</span>
+              <span class="stat-label">Core Projects</span>
+            </div>
+            <div class="stat-box" data-count="4">
+              <span class="stat-number">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-box" data-count="9" data-suffix="+">
+              <span class="stat-number">0+</span>
+              <span class="stat-label">Certificates</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ==================== RECRUITER ROLE MATCHER (INTERACTIVE HOOK) ==================== -->
+    <section class="section role-matcher-section" id="role-matcher" aria-label="Recruiter Role Matcher">
+      <div class="container">
+        <div class="role-matcher-card">
+          <div class="role-matcher-header">
+            <div class="matcher-badge">
+              <span class="matcher-pulse">🎯</span>
+              <span>Interactive Recruiter Hook</span>
+            </div>
+            <h2 class="matcher-title">Tailor this Portfolio to Your Hiring Role</h2>
+            <p class="matcher-subtitle">Click your open position below to dynamically highlight matching skills, filter relevant projects, and view a targeted fit breakdown.</p>
+          </div>
+
+          <div class="role-pills-wrap" role="radiogroup" aria-label="Target Role Selection">
+            <button type="button" class="role-pill-btn" data-role="java">
+              <span class="pill-icon">☕</span>
+              <span class="pill-text">Java &amp; Spring Boot Backend</span>
+            </button>
+            <button type="button" class="role-pill-btn" data-role="fullstack">
+              <span class="pill-icon">⚛️</span>
+              <span class="pill-text">Full-Stack Software Engineer</span>
+            </button>
+            <button type="button" class="role-pill-btn" data-role="python">
+              <span class="pill-icon">🐍</span>
+              <span class="pill-text">Python &amp; MySQL Developer</span>
+            </button>
+            <button type="button" class="role-pill-btn" data-role="iot">
+              <span class="pill-icon">⚡</span>
+              <span class="pill-text">Electronics &amp; Embedded IoT</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Role Match Result Box -->
+          <div class="matcher-result-box" id="matcher-result-box" style="display: none;">
+            <div class="matcher-result-header">
+              <div class="matcher-score-badge" id="matcher-score-badge">98% Role Match 🔥</div>
+              <h3 class="matcher-role-title" id="matcher-role-title">Java &amp; Spring Boot Developer</h3>
+              <button type="button" class="matcher-reset-btn" id="matcher-reset-btn" title="Reset portfolio filters">🔄 Reset View</button>
+            </div>
+            <p class="matcher-summary" id="matcher-summary"></p>
+            <div class="matcher-actions">
+              <a href="resume.html" target="_blank" class="btn btn-primary btn-sm matcher-cta-btn">
+                📄 View Targeted Resume
+              </a>
+              <a href="#projects" class="btn btn-outline btn-sm matcher-cta-btn">
+                🚀 View Matched Projects
+              </a>
+              <a href="#contact" class="btn btn-secondary btn-sm matcher-cta-btn">
+                ✉️ Quick Connect
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Who I Am</p>
+          <h2 id="about-title" class="section-title">Professional Summary</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text-content">
+            <p>
+              I am a final-year Electronics Engineering student specializing in <strong>VLSI Design and
+                Technology</strong>, with a prior <strong>Diploma in Computer Technology</strong>. I possess a solid
+              foundation in computer science and software development principles, spanning <strong>Core Java, OOPs, SQL,
+                HTML5, CSS3, JavaScript</strong>, and modern full-stack architectures.
+            </p>
+            <p>
+              Through real-world internships and academic projects, I have gained hands-on experience in frontend
+              engineering, Java application development, responsive UI design, IoT solutions, and database management.
+            </p>
+            <p>
+              I am actively seeking software engineering and IT opportunities where I can apply my problem-solving
+              abilities, learn cutting-edge technologies, and contribute to impactful digital solutions.
+            </p>
+
+            <div class="languages-box">
+              <h3>Spoken Languages</h3>
+              <ul class="language-list">
+                <li><strong>English</strong> &ndash; Professional Working Proficiency</li>
+                <li><strong>Hindi</strong> &ndash; Native / Highly Proficient</li>
+                <li><strong>Marathi</strong> &ndash; Native / Fluent</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="about-highlights">
+            <article class="highlight-card tilt-card">
+              <h3>💡 Strong Fundamentals</h3>
+              <p>Robust grasp of Object-Oriented Programming (OOPs), Data Structures, Algorithms, and CRUD operations.
+              </p>
+            </article>
+
+            <article class="highlight-card tilt-card">
+              <h3>🌐 Full-Stack Capability</h3>
+              <p>Experienced with both frontend UI crafting (HTML5, CSS3, JS, React) and robust backend development
+                (Java, Spring Boot, Python, MySQL).</p>
+            </article>
+
+            <article class="highlight-card tilt-card">
+              <h3>⚡ Cross-Disciplinary Edge</h3>
+              <p>Electronics engineering combined with diploma computer tech background gives unique insights into
+                embedded systems, IoT, and high-performance software.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="section education-section" id="education" aria-labelledby="education-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Academic Background</p>
+          <h2 id="education-title" class="section-title">Education</h2>
+        </header>
+
+        <div class="timeline education-timeline">
+          <!-- B.Tech -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2024 &ndash; 2027</span>
+              <h3 class="timeline-degree">B. Tech in Electronics Engineering (VLSI Design &amp; Technology)</h3>
+              <h4 class="timeline-institution">CSMSS Chhatrapati Shahu College of Engineering</h4>
+              <p class="timeline-grade"><strong>Score:</strong> CGPA 8.35 / 10.0</p>
+              <p class="timeline-desc">Specializing in VLSI architecture, semiconductor basics, digital systems, and
+                software co-design.</p>
+            </div>
+          </article>
+
+          <!-- Diploma -->
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">2022 &ndash; 2024</span>
+              <h3 class="timeline-degree">Diploma in Computer Technology</h3>
+              <h4 class="timeline-institution">K. K. Wagh College of Polytechnic</h4>
+              <p class="timeline-grade"><strong>Score:</strong> 73.49%</p>
+              <p class="timeline-desc">Core curriculum in computer architecture, data structures, Java, operating
+                systems, and web technologies.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Expertise &amp; Toolkit</p>
+          <h2 id="skills-title" class="section-title">Technical &amp; Core Competencies</h2>
+        </header>
+
+        <div class="skills-grid">
+          <!-- Programming & Core -->
+          <div class="skill-category">
+            <h3 class="category-title">Programming &amp; Core CS</h3>
+            <ul class="skill-tags">
+              <li>Core Java</li>
+              <li>OOPs (Object Oriented Programming)</li>
+              <li>Java Fundamentals</li>
+              <li>Python</li>
+              <li>Problem Solving</li>
+              <li>CRUD Operations</li>
+            </ul>
+          </div>
+
+          <!-- Web & Full Stack -->
+          <div class="skill-category">
+            <h3 class="category-title">Web &amp; Full Stack</h3>
+            <ul class="skill-tags">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>React.js</li>
+              <li>Spring Boot</li>
+              <li>REST APIs</li>
+              <li>MERN Stack (In Training)</li>
+              <li>Responsive Web Design</li>
+            </ul>
+          </div>
+
+          <!-- Databases & Tools -->
+          <div class="skill-category">
+            <h3 class="category-title">Databases &amp; Tools</h3>
+            <ul class="skill-tags">
+              <li>SQL</li>
+              <li>MySQL</li>
+              <li>MongoDB</li>
+              <li>VS Code</li>
+              <li>Power BI</li>
+              <li>Blynk (IoT Platform)</li>
+            </ul>
+          </div>
+
+          <!-- Soft Skills -->
+          <div class="skill-category">
+            <h3 class="category-title">Professional &amp; Soft Skills</h3>
+            <ul class="skill-tags">
+              <li>Analytical Problem Solving</li>
+              <li>Team Collaboration</li>
+              <li>Communication</li>
+              <li>Adaptability</li>
+              <li>Quick Learning</li>
+              <li>Time Management</li>
+              <li>Attention to Detail</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Interactive Proficiency Meters -->
+        <div class="skills-proficiency-container" id="skills-meters">
+          <h3 class="proficiency-title">Key Technical Proficiency Levels</h3>
+          <div class="proficiency-grid">
+            <div class="skill-meter" data-target="92">
+              <div class="meter-info">
+                <span class="meter-name">Core Java &amp; Object Oriented Programming</span>
+                <span class="meter-percentage">92%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter" data-target="88">
+              <div class="meter-info">
+                <span class="meter-name">Spring Boot &amp; RESTful APIs</span>
+                <span class="meter-percentage">88%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter" data-target="86">
+              <div class="meter-info">
+                <span class="meter-name">SQL Database &amp; CRUD Operations</span>
+                <span class="meter-percentage">86%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter" data-target="90">
+              <div class="meter-info">
+                <span class="meter-name">Frontend Engineering (React.js, HTML5, CSS3)</span>
+                <span class="meter-percentage">90%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter" data-target="82">
+              <div class="meter-info">
+                <span class="meter-name">Python Programming &amp; Scripting</span>
+                <span class="meter-percentage">82%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+
+            <div class="skill-meter" data-target="85">
+              <div class="meter-info">
+                <span class="meter-name">IoT Architecture &amp; Blynk Platform</span>
+                <span class="meter-percentage">85%</span>
+              </div>
+              <div class="meter-track">
+                <div class="meter-fill" style="width: 0%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Portfolio Showcase</p>
+          <h2 id="projects-title" class="section-title">Academic &amp; Professional Projects</h2>
+        </header>
+
+        <!-- Interactive Category Filter Tabs -->
+        <div class="project-filters" role="tablist" aria-label="Project Categories">
+          <button class="filter-btn active" data-filter="all">All Projects (3)</button>
+          <button class="filter-btn" data-filter="java">Java &amp; Spring Boot</button>
+          <button class="filter-btn" data-filter="python">Python &amp; MySQL</button>
+          <button class="filter-btn" data-filter="web">Full Stack Web</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card" data-category="java web">
+            <div class="project-header">
+              <span class="project-tag">Full Stack Java Application</span>
+              <h3 class="project-title">Student Course Management System</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">
+                An end-to-end full-stack web application designed to manage student enrollments, course catalogs, grade
+                tracking, and instructor assignments with secured REST endpoints.
+              </p>
+
+              <!-- Interactive native HTML accordion -->
+              <details class="project-details">
+                <summary>Key Features &amp; Implementation Details</summary>
+                <ul>
+                  <li>Engineered backend business logic using Core Java and Spring Boot.</li>
+                  <li>Designed and consumed RESTful APIs for seamless frontend-backend communication.</li>
+                  <li>Responsive frontend interface crafted with React.js, HTML5, CSS3, and JavaScript.</li>
+                  <li>Relational database storage &amp; CRUD operations managed with MySQL and SQL.</li>
+                </ul>
+              </details>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Core Java</span>
+                <span class="tech-badge">Spring Boot</span>
+                <span class="tech-badge">REST APIs</span>
+                <span class="tech-badge">React.js</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML5/CSS3</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="project-btn-code" data-code="course-mgmt" title="Inspect Source Code &amp; Architecture">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+                  Source Code
+                </button>
+                <button class="project-btn-demo" data-project="course-mgmt">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  Architecture Overview
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" data-category="python web">
+            <div class="project-header">
+              <span class="project-tag">Web Application</span>
+              <h3 class="project-title">Alumni Management System</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">
+                A web-based platform dedicated to bridging the gap between college alumni and current students for
+                networking, mentorship, event management, and career opportunities.
+              </p>
+
+              <details class="project-details">
+                <summary>Key Features &amp; Implementation Details</summary>
+                <ul>
+                  <li>Centralized directory for managing alumni profiles and verification.</li>
+                  <li>Event broadcast system for reunions, webinars, and placement drives.</li>
+                  <li>Backend scripted with Python and MySQL database schema.</li>
+                  <li>Clean and responsive user interface with vanilla HTML, CSS, and JavaScript.</li>
+                </ul>
+              </details>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="project-btn-code" data-code="alumni-mgmt" title="Inspect Source Code &amp; Architecture">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+                  Source Code
+                </button>
+                <button class="project-btn-demo" data-project="alumni-mgmt">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  Architecture Overview
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" data-category="python web">
+            <div class="project-header">
+              <span class="project-tag">AgriTech Web Platform</span>
+              <h3 class="project-title">Krishi Connect</h3>
+            </div>
+            <div class="project-body">
+              <p class="project-desc">
+                A full-stack web platform connecting farmers with agricultural resources, government schemes, market
+                prices, and farming advisory services to empower rural communities.
+              </p>
+
+              <details class="project-details">
+                <summary>Key Features &amp; Implementation Details</summary>
+                <ul>
+                  <li>Information portal for seeds, fertilizers, and market equipment.</li>
+                  <li>Real-time updates on agriculture notices and advisory services.</li>
+                  <li>Python-powered backend with MySQL data persistence.</li>
+                  <li>Intuitive multilingual-ready UI structured for accessible farmer interaction.</li>
+                </ul>
+              </details>
+
+              <div class="project-tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">MySQL</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <button type="button" class="project-btn-code" data-code="krishi-connect" title="Inspect Source Code &amp; Architecture">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+                  Source Code
+                </button>
+                <button class="project-btn-demo" data-project="krishi-connect">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                  Architecture Overview
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE / INTERNSHIPS SECTION ==================== -->
+    <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Practical Work</p>
+          <h2 id="experience-title" class="section-title">Internships &amp; Training</h2>
+        </header>
+
+        <div class="experience-list">
+          <!-- Internship 1 -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Full Stack Development (MERN) Trainee</h3>
+                <h4 class="exp-company">ABC Training Institute</h4>
+              </div>
+              <span class="exp-type">Ongoing Training</span>
+            </div>
+            <p class="exp-desc">
+              Undergoing comprehensive practical training in modern full-stack web development using MongoDB,
+              Express.js, React.js, and Node.js. Implementing REST APIs, state management, and modern component-driven
+              frontends.
+            </p>
+          </article>
+
+          <!-- Internship 2 -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Web Development Intern</h3>
+                <h4 class="exp-company">Caliber Infotech</h4>
+              </div>
+              <span class="exp-type">Diploma Internship</span>
+            </div>
+            <p class="exp-desc">
+              Completed an intensive diploma internship focused on web development, gaining hands-on industry experience
+              in frontend technologies, responsive UI design, cross-browser compatibility, and client-side scripting.
+            </p>
+          </article>
+
+          <!-- Internship 3 -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Java Intern</h3>
+                <h4 class="exp-company">Codec Technologies</h4>
+              </div>
+              <span class="exp-type">Online Internship</span>
+            </div>
+            <p class="exp-desc">
+              Completed an online Java internship, developing practical expertise in Core Java programming,
+              object-oriented concepts, exception handling, data structures, and algorithmic problem-solving.
+            </p>
+          </article>
+
+          <!-- Internship 4 -->
+          <article class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role">Python Intern</h3>
+                <h4 class="exp-company">Skill Dzire</h4>
+              </div>
+              <span class="exp-type">Online Internship</span>
+            </div>
+            <p class="exp-desc">
+              Completed an online internship in foundational Python programming, mastering control structures,
+              functions, file handling, and computational problem-solving.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section class="section certifications-section" id="certifications" aria-labelledby="certifications-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Credentials &amp; Honors</p>
+          <h2 id="certifications-title" class="section-title">Certifications &amp; Achievements</h2>
+        </header>
+
+        <div class="certifications-grid">
+          <article class="cert-card">
+            <div class="cert-badge">Elite + Silver</div>
+            <h3>NPTEL &ndash; Java Programming</h3>
+            <p>Score: <strong>86%</strong> &bull; Ministry of Education, Govt. of India</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Elite + Silver</div>
+            <h3>NPTEL &ndash; Internet of Things (IoT)</h3>
+            <p>Score: <strong>86%</strong> &bull; Ministry of Education, Govt. of India</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Certified</div>
+            <h3>Udemy &ndash; Power BI Certification</h3>
+            <p>Data visualization, reporting dashboards, and business intelligence.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge prize">🏆 2nd Prize</div>
+            <h3>Poster Competition</h3>
+            <p>Secured 2nd Prize and honored with a Memento for technical presentation.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Certificate</div>
+            <h3>Generative AI &ndash; 2-Hour Online Workshop</h3>
+            <p>Hands-on foundation in prompt design, LLMs, and GenAI capabilities.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Competitions</div>
+            <h3>Virtual Vista, UTKARSH-26 &amp; IETE</h3>
+            <p>Participation Certificates across premier technical project exhibitions.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Participation</div>
+            <h3>Coding Competition</h3>
+            <p>Certificate of Participation in competitive coding challenge.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Course</div>
+            <h3>Simplilearn &ndash; Introduction to HTML &amp; CSS</h3>
+            <p>Online course certification in core frontend web building blocks.</p>
+          </article>
+
+          <article class="cert-card">
+            <div class="cert-badge">Leadership</div>
+            <h3>Technical Team Member &ndash; Student Club</h3>
+            <p>Organizing workshops, mentoring peers, and managing club activities.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <header class="section-header">
+          <p class="section-eyebrow">Connect With Me</p>
+          <h2 id="contact-title" class="section-title">Get In Touch</h2>
+        </header>
+
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h3>Let's collaborate on your next project!</h3>
+            <p>
+              I am open to full-time opportunities, internships, and collaborative software projects. Feel free to reach
+              out directly via email, phone, or LinkedIn.
+            </p>
+
+            <address class="contact-details-list">
+              <div class="contact-detail-item">
+                <strong>Email:</strong>
+                <a href="mailto:vedashrigavali500@gmail.com">vedashrigavali500@gmail.com</a>
+              </div>
+              <div class="contact-detail-item">
+                <strong>Phone:</strong>
+                <a href="tel:+918010132230">+91 80101 32230</a>
+              </div>
+              <div class="contact-detail-item">
+                <strong>Location:</strong>
+                <span>Chhatrapati Sambhajinagar, Maharashtra, India</span>
+              </div>
+              <div class="contact-detail-item">
+                <strong>LinkedIn:</strong>
+                <a href="https://linkedin.com/in/vedashri-gavali" target="_blank" rel="noopener noreferrer">
+                  linkedin.com/in/vedashri-gavali
+                </a>
+              </div>
+            </address>
+          </div>
+
+          <!-- Interactive Contact Form with Direct Gmail Delivery -->
+          <form class="contact-form" id="contact-form" novalidate action="https://formsubmit.co/vedashrigavali500@gmail.com" method="POST">
+            <!-- FormSubmit Configuration & Anti-Spam -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_subject" id="formsubmit-subject" value="New Portfolio Message - Vedashri Gavali">
+            <input type="hidden" name="_next" id="formsubmit-next" value="">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <fieldset>
+              <div class="legend-header">
+                <legend>Send a Message</legend>
+                <span class="webhook-indicator" title="Submissions deliver directly to vedashrigavali500@gmail.com">
+                  <span class="webhook-dot"></span> Live Inbox Active
+                </span>
+              </div>
+
+              <div class="form-group">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. John Doe" required autocomplete="name" aria-describedby="name-error">
+                <span class="field-error" id="name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span class="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="e.g. john@example.com" required
+                  autocomplete="email" aria-describedby="email-error">
+                <span class="field-error" id="email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject <span class="required">*</span></label>
+                <select id="subject" name="subject" required aria-describedby="subject-error">
+                  <option value="" disabled selected>Select an option</option>
+                  <option value="job">Job / Internship Opportunity</option>
+                  <option value="project">Project Collaboration</option>
+                  <option value="freelance">Freelance Inquiry</option>
+                  <option value="general">General Networking</option>
+                </select>
+                <span class="field-error" id="subject-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Your Message <span class="required">*</span></label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here (min. 10 characters)..."
+                  required aria-describedby="message-error"></textarea>
+                <span class="field-error" id="message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Real-time Status / Feedback banner inside the card -->
+              <div class="form-status-alert" id="form-status-alert" style="display: none;" role="alert"></div>
+
+              <div class="form-actions-group">
+                <button type="submit" class="btn btn-primary submit-btn" id="contact-submit-btn">
+                  <span class="btn-text">Send Message &bull; Deliver to Inbox &rarr;</span>
+                  <span class="btn-spinner" aria-hidden="true"></span>
+                </button>
+                <a href="mailto:vedashrigavali500@gmail.com?subject=Portfolio%20Inquiry%20from%20Visitor" id="btn-direct-email" class="direct-email-btn" target="_blank" rel="noopener noreferrer" title="Directly compose email in Gmail or default email client">
+                  ✉ Or Compose in Mail / Gmail &nearr;
+                </a>
+              </div>
+
+              <p class="form-delivery-note">
+                <span class="delivery-shield">🔒</span> Direct encrypted delivery to <strong>vedashrigavali500@gmail.com</strong>.
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>&copy; 2026 Vedashri Prabhakar Gavali. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#top">Back to Top &uarr;</a></li>
+        <li><a href="https://linkedin.com/in/vedashri-gavali" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+        <li><a href="mailto:vedashrigavali500@gmail.com">Email</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <!-- Interactive Project Architecture Modal -->
+  <dialog class="project-modal" id="project-modal">
+    <div class="modal-card">
+      <header class="modal-header">
+        <h3 id="modal-title">System Architecture Overview</h3>
+        <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      </header>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Interactive Project Source Code Inspector Modal -->
+  <dialog class="code-modal" id="code-modal">
+    <div class="code-modal-card">
+      <header class="code-modal-header">
+        <div class="code-header-left">
+          <div class="terminal-dots">
+            <span class="dot dot-red"></span>
+            <span class="dot dot-yellow"></span>
+            <span class="dot dot-green"></span>
+          </div>
+          <h3 id="code-modal-title">Project Source Code Inspector</h3>
+        </div>
+        <button class="modal-close-btn" id="code-modal-close" aria-label="Close code inspector">&times;</button>
+      </header>
+
+      <!-- Code Inspector File Tabs -->
+      <div class="code-tabs-bar" id="code-tabs-bar" role="tablist">
+        <!-- Injected dynamically via JS -->
+      </div>
+
+      <!-- Code Display Block -->
+      <div class="code-content-wrapper">
+        <div class="code-toolbar">
+          <div class="code-meta-left">
+            <span class="code-lang-badge" id="code-lang-badge">JAVA</span>
+            <span class="code-file-path" id="code-file-path">src/main/java/...</span>
+          </div>
+          <div class="code-toolbar-actions">
+            <button class="btn-copy-code" id="btn-copy-code" title="Copy code to clipboard">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+              <span id="copy-btn-text">Copy Code</span>
+            </button>
+            <a href="https://github.com/vedashri-gavali" target="_blank" rel="noopener noreferrer" class="btn-github-link" id="code-github-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z"/></svg>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+        </div>
+        <div class="code-scroll-area">
+          <pre class="code-pre"><code class="code-block" id="code-display"></code></pre>
+        </div>
+      </div>
+
+      <!-- Description Footer -->
+      <footer class="code-modal-footer">
+        <p id="code-modal-desc">Production-grade architecture designed and written by Vedashri Gavali.</p>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- Interactive Cmd+K Command Palette & Developer Terminal -->
+  <dialog class="cmd-palette-modal" id="cmd-palette-modal">
+    <div class="cmd-palette-card">
+      <div class="cmd-search-wrap">
+        <svg class="cmd-search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        <input type="text" class="cmd-search-input" id="cmd-search-input" placeholder="Type a command or keyword (e.g. projects, resume, skills, theme, hire)..." autocomplete="off" spellcheck="false">
+        <span class="cmd-esc-badge">ESC</span>
+      </div>
+
+      <div class="cmd-results-list" id="cmd-results-list" role="listbox">
+        <!-- Rendered via JS -->
+      </div>
+
+      <footer class="cmd-palette-footer">
+        <div class="cmd-footer-hints">
+          <span><kbd>&uarr;</kbd> <kbd>&darr;</kbd> Navigate</span>
+          <span><kbd>&crarr;</kbd> Select</span>
+          <span><kbd>ESC</kbd> Close</span>
+        </div>
+        <span class="cmd-brand-tag">Vedashri Gavali Portfolio CLI v2.4</span>
+      </footer>
+    </div>
+  </dialog>
+
+  <!-- Interactive 30-Second Recruiter Cheat Sheet Modal -->
+  <dialog class="cheat-sheet-modal" id="cheat-sheet-modal">
+    <div class="cheat-sheet-card">
+      <header class="cheat-sheet-header">
+        <div class="cheat-header-info">
+          <div class="cheat-avatar-wrap">
+            <img src="profile.jpg" alt="Vedashri Gavali" class="cheat-avatar-img" width="46" height="46" loading="lazy" />
+            <span class="cheat-status-dot"></span>
+          </div>
+          <div class="cheat-header-titles">
+            <div class="cheat-header-title-row">
+              <h3>Recruiter 30-Second Cheat Sheet</h3>
+              <span class="cheat-badge-available">Available</span>
+            </div>
+            <p class="cheat-header-sub">Vedashri Prabhakar Gavali &bull; Full-Stack Software Engineer</p>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="cheat-modal-close" aria-label="Close cheat sheet">&times;</button>
+      </header>
+
+      <div class="cheat-sheet-body">
+        <div class="cheat-metrics-grid">
+          <div class="cheat-metric">
+            <span class="metric-label">Target Role</span>
+            <span class="metric-value">Full-Stack Software Engineer</span>
+          </div>
+          <div class="cheat-metric">
+            <span class="metric-label">Current Academics</span>
+            <span class="metric-value">B.Tech VLSI (CGPA: 8.35/10)</span>
+          </div>
+          <div class="cheat-metric">
+            <span class="metric-label">Availability / Notice</span>
+            <span class="metric-value text-emerald">Immediate / Final Year</span>
+          </div>
+          <div class="cheat-metric">
+            <span class="metric-label">Location / Mobility</span>
+            <span class="metric-value">Chhatrapati Sambhajinagar (Open to Relocate / Remote)</span>
+          </div>
+        </div>
+
+        <div class="cheat-highlight-box">
+          <h4>⚡ Core Technical Stack</h4>
+          <p><strong>Primary Technologies:</strong> Core Java, Spring Boot, React.js, Python, JavaScript, HTML5, CSS3, SQL</p>
+          <p><strong>Databases &amp; Tools:</strong> MySQL, Spring Data JPA, REST APIs, Git, VS Code, Power BI, Blynk IoT</p>
+          <p><strong>Practical Experience:</strong> 4 Internships (Full Stack MERN, Web Dev, Java, Python), 4 Key Projects, 9 Certifications</p>
+        </div>
+
+        <div class="cheat-actions">
+          <a href="resume.html" target="_blank" class="btn btn-primary cheat-action-btn">
+            📄 View 1-Page Resume
+          </a>
+          <a href="Vedashri_Gavali_Resume.pdf" download="Vedashri_Gavali_Resume.pdf" class="btn btn-secondary cheat-action-btn">
+            📥 Download 1-Page PDF
+          </a>
+          <a href="tel:+918010132230" class="btn btn-outline cheat-action-btn">
+            📞 Direct Call (+91 80101 32230)
+          </a>
+          <a href="mailto:vedashrigavali500@gmail.com" class="btn btn-outline cheat-action-btn">
+            ✉️ Quick Email
+          </a>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ==================== VEDASHRI AI CAREER ASSISTANT CHATBOT ==================== -->
+  <!-- Proactive Chat Greeting Bubble -->
+  <div class="ai-chat-prompt-bubble" id="ai-chat-prompt-bubble" role="dialog" aria-label="Chat assistant suggestion">
+    <button type="button" class="ai-bubble-close-btn" id="ai-bubble-close-btn" aria-label="Dismiss chat tip">&times;</button>
+    <div class="ai-bubble-body">
+      <span class="ai-bubble-avatar-ring">
+        <img src="profile.jpg" alt="Vedashri AI" class="ai-bubble-avatar" />
+      </span>
+      <div class="ai-bubble-text-wrap">
+        <p class="ai-bubble-title"><strong>Ask My AI Assistant 👋</strong></p>
+        <p class="ai-bubble-desc">Instant answers on Java, Spring Boot, CGPA &amp; job availability!</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Launcher Button -->
+  <button type="button" class="ai-chat-launcher" id="ai-chat-launcher" aria-label="Open Vedashri AI Assistant" aria-expanded="false" title="Chat with Vedashri AI Career Assistant">
+    <div class="ai-launcher-avatar-wrap">
+      <img src="profile.jpg" alt="Vedashri AI" class="ai-launcher-avatar" />
+      <span class="ai-launcher-dot"></span>
+    </div>
+    <span class="ai-launcher-text">Ask AI Assistant</span>
+    <span class="ai-launcher-sparkle">✨</span>
+  </button>
+
+  <!-- Interactive AI Chat Drawer / Modal Window -->
+  <aside class="ai-chat-drawer" id="ai-chat-drawer" aria-label="Vedashri AI Assistant Window" aria-hidden="true">
+    <!-- Header -->
+    <header class="ai-drawer-header">
+      <div class="ai-drawer-profile">
+        <div class="ai-drawer-avatar-wrap">
+          <img src="profile.jpg" alt="Vedashri AI" class="ai-drawer-avatar" />
+          <span class="ai-drawer-online-indicator"></span>
+        </div>
+        <div class="ai-drawer-info">
+          <div class="ai-drawer-name-row">
+            <h4>Vedashri AI Assistant</h4>
+            <span class="ai-badge-fast">⚡ Instant</span>
+          </div>
+          <p class="ai-drawer-sub">Trained on Vedashri&rsquo;s CV &bull; <span class="ai-text-online">Online</span></p>
+        </div>
+      </div>
+      <div class="ai-drawer-actions">
+        <button type="button" class="ai-action-btn" id="ai-voice-toggle-btn" title="Toggle voice narration (speech on/off)" aria-label="Toggle voice narration">
+          <span id="ai-voice-icon">🔇</span>
+        </button>
+        <button type="button" class="ai-action-btn" id="ai-clear-chat-btn" title="Clear chat conversation" aria-label="Clear chat">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
+        </button>
+        <button type="button" class="ai-action-btn ai-close-drawer-btn" id="ai-close-drawer-btn" title="Minimize chat" aria-label="Close chat">
+          &times;
+        </button>
+      </div>
+    </header>
+
+    <!-- Quick Prompt Suggestions Chips Bar -->
+    <div class="ai-chips-scroll" id="ai-chips-scroll" aria-label="Suggested quick questions">
+      <button type="button" class="ai-chip" data-prompt="What is Vedashri's experience with Java and Spring Boot?">☕ Java &amp; Spring Boot</button>
+      <button type="button" class="ai-chip" data-prompt="What is her college, degree, and CGPA?">🎓 CGPA &amp; Academics</button>
+      <button type="button" class="ai-chip" data-prompt="Tell me about her key projects and architectures.">🚀 Core Projects</button>
+      <button type="button" class="ai-chip" data-prompt="What are her 4 real-world internships?">💼 Internships</button>
+      <button type="button" class="ai-chip" data-prompt="Is she open to relocate and what is her notice period?">📍 Location &amp; Notice</button>
+      <button type="button" class="ai-chip" data-prompt="Why should our engineering team hire Vedashri?">⭐ Why Hire Her?</button>
+      <button type="button" class="ai-chip" data-prompt="How can I contact or schedule an interview with her?">✉️ Hire / Contact</button>
+      <button type="button" class="ai-chip" data-prompt="Can I download or view her 1-page CV?">📄 Download Resume</button>
+    </div>
+
+    <!-- Messages Container -->
+    <div class="ai-messages-list" id="ai-messages-list" role="log" aria-live="polite">
+      <!-- Injected via JavaScript -->
+    </div>
+
+    <!-- Typing Indicator -->
+    <div class="ai-typing-status" id="ai-typing-status" style="display: none;">
+      <div class="ai-dots">
+        <span></span><span></span><span></span>
+      </div>
+      <span class="ai-typing-label">Vedashri AI is generating an answer...</span>
+    </div>
+
+    <!-- Message Input Bar -->
+    <form class="ai-input-form" id="ai-input-form">
+      <input type="text" class="ai-text-input" id="ai-text-input" placeholder="Ask anything (e.g. 'Tell me about Java projects')..." autocomplete="off" spellcheck="false" />
+      <button type="submit" class="ai-send-button" id="ai-send-button" aria-label="Send message">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+      </button>
+    </form>
+  </aside>
+
+  <!-- Floating Back to Top Button -->
+  <a href="#top" class="back-to-top" id="back-to-top" aria-label="Back to top" title="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </a>
+
+  <!-- Toast Feedback Notification -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite">
+    <span class="toast-icon">✨</span>
+    <div class="toast-message" id="toast-message">Message sent successfully!</div>
+  </div>
+
+  <!-- Interactive Cursor Aura Follower -->
+  <div class="cursor-glow" id="cursor-glow" aria-hidden="true"></div>
+
+  <!-- Full-Screen Celebration Confetti Canvas Overlay -->
+  <canvas class="confetti-canvas" id="confetti-canvas" aria-hidden="true"></canvas>
+
+  <!-- Interactive Scripts -->
+  <script src="script.js" defer></script>
+</body>
+
+</html>
