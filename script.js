@@ -2154,7 +2154,7 @@ if __name__ == '__main__':
     java: {
       title: 'Java & Spring Boot Backend Specialist',
       score: '98% Role Match 🔥',
-      summary: 'Demonstrated proficiency in Core Java, OOP architectures, Spring Boot REST controllers, Spring Data JPA persistence, and MySQL transaction management. 4 real-world internships and 8.35 CGPA.',
+      summary: 'Demonstrated proficiency in Core Java, OOP architectures, Spring Boot REST controllers, Spring Data JPA persistence, and MySQL transaction management. 4 real-world internships and 8.12 CGPA.',
       highlightKeywords: ['Java', 'Spring', 'RESTful', 'MySQL', 'OOP', 'Git'],
       filterCategory: 'java'
     },
@@ -2437,7 +2437,7 @@ if __name__ == '__main__':
         return `
           <p>🎓 <strong>Academic Credentials &amp; Performance:</strong></p>
           <ul>
-            <li><strong>B.Tech in Electronics (VLSI Design &amp; Technology):</strong> MIT Chhatrapati Sambhajinagar (2024&ndash;2027) &bull; <strong>CGPA: 8.35 / 10</strong>.</li>
+            <li><strong>B.Tech in Electronics (VLSI Design &amp; Technology):</strong> MIT Chhatrapati Sambhajinagar (2024&ndash;2027) &bull; <strong>CGPA: 8.12 / 10</strong>.</li>
             <li><strong>Diploma in Computer Technology:</strong> Government Polytechnic (2021&ndash;2024) &bull; <strong>84.40% First Class with Distinction</strong>.</li>
             <li><strong>Secondary School (10th SSC):</strong> <strong>83.80%</strong>.</li>
           </ul>
@@ -2501,7 +2501,7 @@ if __name__ == '__main__':
           <p>⭐ <strong>Top Reasons to Hire Vedashri:</strong></p>
           <ul>
             <li><strong>Dual Rigor:</strong> Strong foundation in CS principles (Diploma in Computer Tech) combined with engineering discipline (B.Tech VLSI).</li>
-            <li><strong>Battle-Tested Fundamentals:</strong> 4 industry internships, an 8.35 CGPA, and hands-on Spring Boot + React projects.</li>
+            <li><strong>Battle-Tested Fundamentals:</strong> 4 industry internships, an 8.12 CGPA, and hands-on Spring Boot + React projects.</li>
             <li><strong>Full-Stack &amp; Hardware Acumen:</strong> Able to design clean user interfaces, architect RESTful microservices, and interface with IoT devices.</li>
             <li><strong>Fast Learner &amp; Immediate Value:</strong> Adaptable, disciplined, and passionate about writing clean, maintainable code.</li>
           </ul>
@@ -2592,7 +2592,7 @@ if __name__ == '__main__':
         <p>Would you like to know about:</p>
         <ul>
           <li>Her <strong>Core Java &amp; Spring Boot</strong> experience?</li>
-          <li>Her <strong>4 industry internships</strong> or <strong>8.35 CGPA</strong>?</li>
+          <li>Her <strong>4 industry internships</strong> or <strong>8.12 CGPA</strong>?</li>
           <li>Her <strong>Alumni Portal</strong> or <strong>IoT Smart Home</strong> projects?</li>
         </ul>
         <div class="ai-actions-row">
